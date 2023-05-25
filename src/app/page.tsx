@@ -1,10 +1,16 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+
+import { SwitchCustom as Switch } from '../components/Switch';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Test1</h1>
+      <h1 className="text-8xl font-bold">My title with custom font Заголовок с кастомным шрифтом</h1>
+      <h2 className="text-3xl font-bold underline">Hello, Next.js!</h2>
+
+      <Switch />
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
